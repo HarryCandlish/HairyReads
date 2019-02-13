@@ -3,6 +3,7 @@ const request = require('superagent');
 
 
 import Home from './Home'
+import Description from './Description'
 
 class Fiction extends Component {
   constructor(){
@@ -29,11 +30,11 @@ class Fiction extends Component {
           <ul>
          {
             this.state.books.map((book) =>  {
-              return <li>{book.book_details[0].title}<br></br>{book.book_details[0].author}<br></br><br></br>
-              <button type = "text">add</button></li>
-            })
-          }
-         
+              return <li>{book.book_details[0].title}
+              <br></br>{book.book_details[0].author}
+                <Description description={book.book_details[0].description}/></li>
+              
+          })}
           </ul>
         </div>
         <div>
