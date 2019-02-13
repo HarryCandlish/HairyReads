@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Fiction from './Fiction'
-import NonFiction from './NonFiction'
 import About from './About'
 import Profile from './Profile'
 

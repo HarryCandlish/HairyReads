@@ -16,6 +16,7 @@ class Fiction extends Component {
       .end((err,res) => {
         this.setState({books:res.body.results})
       })
+  
     
     
   }
@@ -29,11 +30,11 @@ class Fiction extends Component {
           <ul>
          {
             this.state.books.map((book) =>  {
-              return <li>{book.book_details[0].title}<br></br>{book.book_details[0].author}<br></br>
-              {book.book_details[0].description}<br></br>
-              <button className = "addButton" type="text">Add</button></li>
-
+              return <li>{book.book_details[0].title}<br></br>{book.book_details[0].author}</li>
             })
+          }
+          {
+      
           }
           </ul>
         </div>
