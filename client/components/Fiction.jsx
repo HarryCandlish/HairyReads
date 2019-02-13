@@ -4,7 +4,7 @@ const request = require('superagent');
 
 import Home from './Home'
 import Description from './Description'
-import Images from './images'
+
 
 
 class Fiction extends Component {
@@ -17,7 +17,7 @@ class Fiction extends Component {
   componentWillMount(){
       request
       .get("https://api.nytimes.com/svc/books/v3/lists.json?list-name=hardcover-fiction&api-key=FjSPdfzujduYkg5G6AvAbAAjYnozt8pc")
-      .end((err,res) => {
+.end((err,res) => {
         this.setState({books:res.body.results})
       })
   
@@ -35,7 +35,7 @@ class Fiction extends Component {
               return <li>{book.book_details[0].title}
               <br></br>{book.book_details[0].author}
                 <Description description={book.book_details[0].description}/><br/>
-                <Images/>
+                
                 </li>
               
           })}
