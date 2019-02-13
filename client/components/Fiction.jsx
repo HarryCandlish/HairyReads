@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 const request = require('superagent');
 
+
 import Home from './Home'
 
 class Fiction extends Component {
@@ -17,9 +18,7 @@ class Fiction extends Component {
         this.setState({books:res.body.results})
       })
   
-    
-    
-  }
+     }
   render() {
     return (
       <div>
@@ -30,12 +29,11 @@ class Fiction extends Component {
           <ul>
          {
             this.state.books.map((book) =>  {
-              return <li>{book.book_details[0].title}<br></br>{book.book_details[0].author}</li>
+              return <li>{book.book_details[0].title}<br></br>{book.book_details[0].author}<br></br><br></br>
+              <button type = "text">add</button></li>
             })
           }
-          {
-      
-          }
+         
           </ul>
         </div>
         <div>

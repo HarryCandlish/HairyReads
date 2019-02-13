@@ -6,7 +6,7 @@ import Nav from './Nav'
 import Fiction from './Fiction'
 import Profile from './Profile'
 import About from './About'
-import Images from './Images'
+
   
 const App = () => {
     return (
