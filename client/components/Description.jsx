@@ -24,11 +24,7 @@ class Description extends React.Component {
     }
 }
 
-const display = () => (
-    <div>
-        <p>hello</p>
-    </div>
-)
+
 
 
 

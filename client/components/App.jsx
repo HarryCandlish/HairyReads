@@ -8,7 +8,7 @@ import Profile from './Profile'
 import About from './About'
 import Description from './Description'
 
-  
+
 const App = () => {
     return (
       <Router>
